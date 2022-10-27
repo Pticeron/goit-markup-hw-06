@@ -382,8 +382,8 @@ a.link.current {
 .above-item {
   position: absolute;
   display: flex;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
   
@@ -597,7 +597,7 @@ a.link.current {
 }
 .footer-style {
   display: flex;
-}
+} 
 .link-social:not(:last-child) {
   margin-right: 10px;
 }
@@ -653,10 +653,19 @@ a.link.current {
   background: #2F303A;
 }
 
+.footer-form {
+  display: flex;
+  align-items: baseline;
+}
+
+
 .footer-btn {
+  padding: 0;
+  margin: 0; 
   width: 200px;
   height: 50px;
-  padding: 10px 28px;
+  
+  
   font-family: var(--one-font-family);
     font-style: normal;
     font-weight: 700;
