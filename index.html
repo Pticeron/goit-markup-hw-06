@@ -488,14 +488,15 @@
         <div class="footer-offer">
         <p class="footer-title">Підпишіться на розсилку</p>
       <form class="footer-form">
+        
           <label class="footer-mail">
           <input type="text" name="email" placeholder="E-mail" />
         </label>
+      
         <button class="footer-btn" type="submit">Підписатися
           <svg class="footer-telegram" width="24px" height="24px">
             <use href="./images/symbol-defs.svg#icon-Telegram"></use>
           </svg>
-
         </button>
       </form>
       </div>
@@ -505,31 +506,42 @@
     <!-- Modal windows -->
 
     <div class="backdrop is-hidden" data-modal>
-    
-    
+        
       <div class="modal">
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <button
           class="btn-modal"
           aria-label="Download File"
-          data-modal-close
-        ></button>
-        <form class="footer-form">
+          data-modal-close></button>
+          <!-- <svg>
+            <use href="./images/close.svg"></use>
+          </svg> -->
+                
+        <form class="modal-form">
           <div class="form-field">
           <label for="name" class="form-label">Ім'я</label>
+          <svg class="form-img">
+            <use href="./images/symbol-defs.svg#icon-name" width="18px" height="18px"></use>
+          </svg>
           <input type="text" class="form-input" name="name" id="name">
             </div>
             <div class="form-field">
           <label for="tel" class="form-label">Телефон</label>
+          <svg class="form-img">
+            <use href="./images/symbol-defs.svg#icon-tel-2" width="18px" height="18px"></use>
+          </svg>
           <input type="text" class="form-input" name="tel" id="tel">
           </div>
             <div class="form-field">
           <label for="mail" class="form-label">Пошта</label>
+          <svg class="form-img">
+            <use href="./images/symbol-defs.svg#icon-post" width="18px" height="18px"></use>
+          </svg>
           <input type="text" class="form-input" name="mail" id="mail">
             </div>
               <div class="form-field">
               <label  for="comment" class="form-label">Коментар</label>
-            <textarea name="comment" rows="7" id="comment" placeholder="Введіть текст" class="place-input"></textarea>
+            <textarea name="comment" rows="6" id="comment" placeholder="Введіть текст" class="place-input"></textarea>
               </div>
 
             <div class="form-consent">
@@ -540,7 +552,7 @@
             </label>
             </div>
 
-            <button type="submit" class="footer-btn">Відправити</button>
+            <button type="submit" class="btn-submit">Відправити</button>
           
           </div>
         </form>
