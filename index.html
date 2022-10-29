@@ -491,7 +491,12 @@
           <label class="footer-mail">
           <input type="text" name="email" placeholder="E-mail" />
         </label>
-        <button class="footer-btn" type="submit">Підписатися</button>
+        <button class="footer-btn" type="submit">Підписатися
+          <svg class="footer-telegram" width="24px" height="24px">
+            <use href="./images/symbol-defs.svg#icon-Telegram"></use>
+          </svg>
+
+        </button>
       </form>
       </div>
       </div>
@@ -500,14 +505,48 @@
     <!-- Modal windows -->
 
     <div class="backdrop is-hidden" data-modal>
+    
+    
       <div class="modal">
+      <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <button
           class="btn-modal"
           aria-label="Download File"
           data-modal-close
         ></button>
+        <form class="footer-form">
+          <div class="form-field">
+          <label for="name" class="form-label">Ім'я</label>
+          <input type="text" class="form-input" name="name" id="name">
+            </div>
+            <div class="form-field">
+          <label for="tel" class="form-label">Телефон</label>
+          <input type="text" class="form-input" name="tel" id="tel">
+          </div>
+            <div class="form-field">
+          <label for="mail" class="form-label">Пошта</label>
+          <input type="text" class="form-input" name="mail" id="mail">
+            </div>
+              <div class="form-field">
+              <label  for="comment" class="form-label">Коментар</label>
+            <textarea name="comment" rows="7" id="comment" placeholder="Введіть текст" class="place-input"></textarea>
+              </div>
+
+            <div class="form-consent">
+              <label>
+              <input type="checkbox" name="comment" />
+              Погоджуюся з розсилкою та приймаю 
+              <a href="#" class="input-link">Умови договору</a>
+            </label>
+            </div>
+
+            <button type="submit" class="footer-btn">Відправити</button>
+          
+          </div>
+        </form>
       </div>
-    </div>
+      
+      </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

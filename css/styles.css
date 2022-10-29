@@ -83,6 +83,7 @@ img {
 .padding {
   padding-bottom: 94px;
 }
+/*  BACKDROP AND MODAL */
 
 .backdrop {
   position: fixed;
@@ -153,6 +154,75 @@ img {
   top: 0;
   right: 0;
 }
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 448px;
+  
+  margin-top: 12px
+  
+}
+
+.modal-title {
+  margin-top: 40px;
+  
+  font-family: var(--one-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--one-text-color);
+}
+
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;  
+}
+
+
+.form-label {
+  color:var(--second-text-color);
+  margin-bottom: 4px;
+}
+
+.form-field textarea::placeholder {
+  padding: 12px 16px;
+  color: rgba(117, 117, 117, 0.5);
+  
+}
+
+
+.form-input {
+  width: 100%;
+  height: 39px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.place-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-consent {
+  width: 425px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.input-link {
+  color: var(--akcent-color);
+}
+
 
 /* HEADER */
 .header-site {
@@ -524,6 +594,8 @@ a.link.current {
   background-color: var(--hero-bcg);
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .main-footer {
@@ -655,28 +727,37 @@ a.link.current {
 
 .footer-form {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 
 .footer-btn {
+  position: relative;
   padding: 0;
   margin: 0; 
   width: 200px;
   height: 50px;
+  padding-right: 28px;
   
   
   font-family: var(--one-font-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   
   color: var(--second-akcent-color);
   background: var(--akcent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
+}
+
+.footer-telegram {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
+
 }
 
 
