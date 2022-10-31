@@ -513,7 +513,11 @@
           <button
           class="btn-modal"
           aria-label="Download File"
-          data-modal-close></button>
+          data-modal-close>
+        <svg class="btn-img-modal">
+          <use href="./images/symbol-defs.svg#icon-name" width="18px" height="18px"></use>
+        </svg>
+        </button>
         
         <form class="modal-form">
 
@@ -541,7 +545,7 @@
             </div>
               <div class="form-field">
               <label  for="comment" class="form-label">Коментар</label>
-            <textarea name="comment" rows="6" id="comment" placeholder="Введіть текст" class="place-input"></textarea>
+            <textarea class="form-comment" name="comment" rows="5" id="comment" placeholder="Введіть текст" class="place-input"></textarea>
               </div>
 
             <div class="form-consent">
