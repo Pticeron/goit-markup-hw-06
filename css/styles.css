@@ -122,7 +122,6 @@ img {
 }
 
 .btn-modal {
-  
   position: absolute;
   top: 8px;
   right: 8px;
@@ -139,7 +138,16 @@ img {
 }
 
 .btn-img-modal {
-  fill: #212121;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  fill: var(--logo-color);
+  transition-property: background-image 250ms var(--timing-function);
+}
+
+.btn-img-modal:hover,
+.btn-img-modal:focus {
+  fill: var(--akcent-color)
 }
 
 .checkbox {
@@ -203,6 +211,7 @@ img {
   width: 18px;
   height: 18px;
   fill: var(--one-text-color);
+  transition-property: background-image 250ms var(--timing-function);
 }
 
 .form-label {
@@ -236,12 +245,12 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 12px;
+
+  transition-property: background-image 250ms var(--timing-function);
 }
 
 .place-input {
-  /* height: 120px; */
   border-radius: 4px;
-  /* resize: none; */
 }
 
 .form-comment {
