@@ -251,7 +251,7 @@ img {
   border-radius: 4px;
   padding: 11px 12px;
 
-  transition-property: background-image 250ms var(--timing-function);
+  transition-property: border 250ms var(--timing-function);
 }
 
 
@@ -262,7 +262,7 @@ img {
   resize: none;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  transition-property: background-image 250ms var(--timing-function);
+  transition-property: border 250ms var(--timing-function);
 }
 
 .form-consent {
